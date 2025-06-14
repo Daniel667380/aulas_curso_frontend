@@ -1,8 +1,8 @@
 function usoLoop(){
   let text = "";
-  let i = 0;
-  while (i < 10) {
-    text += "<br>O número é " + i;
+  let i = 1;
+  while (i < 50) {
+    text += "<br>O número é " + ((2*1))+1;
     i++;
   }
   document.getElementById("demo").innerHTML = text;
@@ -11,7 +11,7 @@ function usoLoop(){
 function usoFor(){
   let text = "";
    
-  for (let i = 0; i < 10; i++) {
+  for (let i = 9; i > -1; i--) {
     text += "<br>O número é " + i;
   }
  

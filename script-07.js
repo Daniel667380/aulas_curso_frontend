@@ -1,4 +1,4 @@
-var meuArray = [];
+var meuArray = ['Daniel,Arthur,Ana Luiza'];
 
 function adcionar(){
   var valor = document.getElementById('entrada').value;
@@ -20,5 +20,20 @@ function imprimirLista(){
 
 function limpar(){
   document.getElementById("demo").innerHTML = "";
+  meuArray = [];
+}
+
+function imprimirListaInvertida(){
+  let text = "";
+
+  tamanho_array = meuArray.length
+
+  for(let i = tamanho_array - 1;i > -1; i--){
+
+  text += "<br>" + meuArray[i];
+
+}
+
+ document.getElementById("demo").innerHTML = text;
 
 }
